@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Exa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+
+    <style>
+        header {
+            background-color: transparent;
+            color: #fff;
+            padding: 32px;
+            text-align: center;
+            position: fixed;
+            width: 100%; 
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the nav items */
+            align-items: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+            font-size: 18px;
+            font-family: 'Lexend Deca';
+            display: inline-block;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav li:hover {
+            background-color: black;
+            background-opacity: 0.5;
+            padding: 16px;
+        }
+
+        h1 {
+            margin: 0;
+            animation: swipe 2s forwards;
+        }
+
+        @keyframes swipe {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            margin: 0;
+            background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .Title {
+            font-size: 6em;
+            margin-bottom: 20px;
+            font-family: 'Lexend Exa', sans-serif;
+            animation: swipe 2s forwards;
+        }
+
+        h6 {
+            background-color: transparent;
+            font-size: 40px;
+            font-family: 'Lexend Deca';
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p {
+            font-family: 'Lexend Deca';
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .section {
+            background-color: transparent;
+            font-size: 1.5em;
+            font-family: 'Lexend';
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            background-color: transparent;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: gray;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: black;
+        }
+
+        .dropdown .dropbtn {
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 18px;
+        }
+		
+		footer {
+            background-color: #333;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer nav ul li {
+            margin: 0 15px;
+        }
+
+        footer nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#">Celestial Bodies</a>
+                    <div class="dropdown-content">
+                        <a href="MilkyWayGalaxy.html">Milky Way Galaxy</a>
+                        <a href="AndromedaGalaxy.html">Andromeda Galaxy</a>
+                        <a href="OtherCelestialBodies.html">Other Celestial Bodies</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="parallax">
+        <h1 class="Title">Milky Way Galaxy</h1>
+    </div>
+
+    <div class="section" id="about" >
+        <h6>About</h6>
+        <hr>
+        <p>"Unveil the secrets of our home galaxy, the Milky Way. This section of our website offers a comprehensive look into the Milky Way's vast expanse, from its spiral arms to its dense core. Learn about the billions of stars, planets, and other celestial bodies that make up this cosmic masterpiece. Explore its formation, structure, and how it compares to other galaxies in the universe. Whether you're fascinated by its black holes, star clusters, or the possibility of life within, our detailed guides and visuals provide a fascinating journey through the heart of our galaxy.</p>
+    </div>
+	
+	<footer>
+        <nav>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+	
+</body>
+</html>
